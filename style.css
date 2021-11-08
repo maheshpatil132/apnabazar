@@ -6,11 +6,12 @@
     text-decoration: none;
     color: black;
     transition: all .3s;
-    outline:none;
+    outline: none;
 }
 html{
     font-size: 65.5%;
 }
+
 .header{
     padding: 1rem 9%;
     display: flex;
@@ -89,7 +90,53 @@ html{
 .search_form.active{
     display: block;
 }
-
+.home{
+    background-image: url("https://source.unsplash.com/1600x900/?nature,water");
+    background-size: cover;
+    
+}
+.footer{
+    padding: 0 9% ;
+    background-color: whitesmoke;
+}
+.row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    margin: 0 auto;
+    gap: 1rem;
+}
+.box i{
+    display: block;
+    padding: 1.5rem 0;
+}
+.box a{
+    font-size: 1.5rem;
+    color: rgb(226, 85, 163);
+    font-weight: lighter;
+    padding: 1rem;
+}
+.box a:hover{
+    padding: 1rem 1.9rem;
+}
+.box input{
+    display: block;
+    width: 100%;
+    padding: 1rem ;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+.box button{
+    padding: .7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .3rem;
+    outline: none;
+    border: .1rem solid black;
+    cursor: pointer;
+}
+.box button:hover{
+    background-color: black;
+    color: white;
+}
 
 
 
@@ -102,6 +149,7 @@ html{
         width: 100%;
         left: 0%;
         padding: 0% 9%;
+        background-color: white;
     }
     .header{
         position: relative;
