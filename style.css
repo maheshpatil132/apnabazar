@@ -132,6 +132,7 @@ html{
     outline: none;
     border: .1rem solid black;
     cursor: pointer;
+    margin: 1rem 0;
 }
 .box button:hover{
     background-color: black;
