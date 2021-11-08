@@ -249,6 +249,7 @@ html{
         position: relative;
         text-align: center;
         position: sticky;
+        padding: 1rem 4%;
     }
     .navbar li{
         width: 100%;
