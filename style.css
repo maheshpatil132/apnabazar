@@ -68,6 +68,7 @@ html{
     display: none;
     z-index: 900;
     background-color: whitesmoke;
+    border: 1px solid lightgrey;
 }
 .search_box{
     width: 100%;
