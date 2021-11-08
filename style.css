@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&family=Ubuntu&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -7,6 +8,8 @@
     color: black;
     transition: all .3s;
     outline: none;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
 }
 html{
     font-size: 65.5%;
@@ -19,10 +22,10 @@ html{
     border-bottom: 1px solid black;
     margin: 0 auto;
     position: relative;
-    position:sticky;
-    top:0;
-    background-color:white;
-    z-index:100;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
 }
 .logo{
     margin-right: auto;
@@ -95,20 +98,100 @@ html{
 .search_form.active{
     display: block;
 }
-.home{
-    background-image: url("https://source.unsplash.com/1600x900/?nature,water");
+.slide{
     background-size: cover;
-    
+    min-height: 60vh;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    display: none;
+    position: relative;
+    z-index: 2;
 }
+.slide::before{
+    content: "";
+    position:absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: .4;
+    z-index: -1;
+}
+.slide h3{
+    font-size:2.5rem ;
+    color: white;
+    padding: .7rem 0;
+}
+.slide.active{
+  display: block;
+  display: flex;
+    align-items: center;
+}
+.slide p{
+    font-size: 1.5rem;
+    color: white;
+    padding: .7rem 0;
+}
+.slide button{
+    padding: .7rem 2.5rem;
+    font-size: 1.5rem;
+    border-radius: .3rem;
+    outline: none;
+    border: .1rem solid black;
+    cursor: pointer;
+    margin: 1rem 0;
+}
+.slide button:hover{
+    background-color: black;
+    color: white;
+}
+
+.banner{
+    padding: 2rem 9%;
+}
+.banner .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem,1fr));
+    gap: 2rem;
+}
+.banner .row .box{
+    text-align: center;
+}
+.banner .heading{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.banner .content{
+    padding: 2rem;
+}
+.banner .row img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: .7rem;
+}
+.banner p{
+    font-size: 1.5rem;
+}
+.banner h3{
+    font-size: 2rem;
+    font-weight: bolder;
+    padding-bottom: .7rem;
+}
+
 .footer{
     padding: 1rem 9% ;
     background-color: whitesmoke;
 }
-.row{
+ .footer .row{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
     margin: 0 auto;
     gap: 1rem;
+    border-bottom: 0.2rem solid black;
 }
 .box i{
     display: block;
@@ -137,14 +220,18 @@ html{
     outline: none;
     border: .1rem solid black;
     cursor: pointer;
-    margin: 1rem 0;
+    margin-bottom: 1rem ;
 }
 .box button:hover{
     background-color: black;
     color: white;
 }
 
-
+.credit{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
 
 @media(max-width:991px){
     .navbar{
@@ -161,8 +248,7 @@ html{
     .header{
         position: relative;
         text-align: center;
-        position:sticky;
- 
+        position: sticky;
     }
     .navbar li{
         width: 100%;
