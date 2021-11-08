@@ -19,6 +19,10 @@ html{
     border-bottom: 1px solid black;
     margin: 0 auto;
     position: relative;
+    position:sticky;
+    top:0;
+    background-color:white;
+    z-index:100;
 }
 .logo{
     margin-right: auto;
@@ -155,6 +159,8 @@ html{
     .header{
         position: relative;
         text-align: center;
+        position:sticky;
+ 
     }
     .navbar li{
         width: 100%;
