@@ -37,8 +37,35 @@ html{
     display: flex;
     align-items: center;
 }
-.link{
-    display: block;
+.navbar ul li  i{
+    margin-left:.4rem ;
+    cursor: pointer;
+    z-index: 2;
+}
+.navbar ul li  i:hover{
+    color: green;
+}
+.navbar .sub_link{
+    position: absolute;
+    top: 99%;
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    display: none;
+    z-index: 1100;
+}
+.sub_link li{
+    width: 100%;
+    background-color: white;
+    border: 1px solid lightgrey;
+    z-index: 100;
+}
+.sub_link li:hover{
+    background-color: lightgrey;
+    color: green;
+}
+.sub_link li:hover a{
+    color: green;
 }
 
 .link:hover{
@@ -51,6 +78,7 @@ html{
 }
 .icon_container i{
     font-size:2.3rem ;
+    /* margin-right: 1rem; */
     padding: 0 1rem;
     cursor: pointer;
     transition: all .1s;
@@ -199,12 +227,13 @@ html{
 }
 .box a{
     font-size: 1.5rem;
-    color: rgb(226, 85, 163);
+    
     font-weight: lighter;
     padding: 1rem;
 }
 .box a:hover{
     padding: 1rem 1.9rem;
+    color: rgb(226, 85, 163);
 }
 .box input{
     display: block;
@@ -247,7 +276,7 @@ html{
     }
     .header{
         position: relative;
-        text-align: center;
+        /* text-align: center; */
         position: sticky;
         padding: 1rem 4%;
     }
@@ -261,7 +290,7 @@ html{
         flex-direction: column;
     }
     .link{
-        display: block;
+        /* display: block; */
     }
     #menu_btn{
         display: initial;
