@@ -282,9 +282,13 @@ html{
     }
     .navbar li{
         width: 100%;
-        border: 1px solid black;
+/*         border: 1px solid black; */
         border-radius:.7rem ;
         margin: .7rem 0;
+    }
+    .navbar .sub_link{
+        position:relative;
+        width:100%
     }
     .navbar ul{
         flex-direction: column;
