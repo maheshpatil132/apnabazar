@@ -219,7 +219,7 @@ html{
     gap: 1rem;
     border-bottom: 0.2rem solid black;
 }
-.box i{
+ .footer .box i{
     display: block;
     padding: 1.5rem 0;
 }
