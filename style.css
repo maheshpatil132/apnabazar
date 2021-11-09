@@ -260,6 +260,58 @@ html{
     padding: 1rem;
 }
 
+.heading_section{
+    text-align: center;
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.heading_section .heading{
+    font-size: 3rem;
+    color: white;
+    /* padding: 3% 0; */
+    line-height: 3;
+}
+.product{
+    padding: 3rem 9%;
+    text-align: center;
+}
+.product .row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 3rem;
+}
+.product .row .box{
+    border: 1px solid black;
+}
+.product .row .box .content{
+    padding: .7rem 0;
+}
+.product .row .box img{
+    width: 100%;
+}
+.product .row .box h3{
+    font-size: 2.5rem;
+   padding: .5rem;
+}
+.product .row .box i{
+    font-size: 1.5rem;
+    color: rgb(228, 62, 173);
+    line-height: 1.6;
+    padding: .5rem .2rem;
+}
+.product .row .box p{
+    font-size: 2rem;
+    line-height: 1.6;
+    padding: .5rem;
+}
+.product .row .box p span{
+    color: grey;
+    text-decoration: line-through;
+    font-size: 1.3rem;
+}
+
 @media(max-width:991px){
     .navbar{
         /* display: none; */
